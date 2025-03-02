@@ -17,6 +17,13 @@
      </p>
      <p id="demo1"></p>
 
+     <!-- Arrow Functions -->
+      <p id="afIntro">
+        Functions can be written more compactly with the help of Arrow functions.
+        Arrow function expressions are ill suited as methods, and they cannot be used as constructors.
+      </p>
+      <p id="demo2"></p>
+
     <script>
         function product(a, b){
             return a*b;
@@ -30,8 +37,20 @@
     <script>
         var body = "return Math.PI *rad *rad";
         var circle = new Function("rad",body);
-        alert(circle(5));
+        // alert(circle(5));
+        var area = circle(5);
+
+        document.getElementById('demo1').innerHTML = area;
 
     </script>
+
+    <!-- Arrow Functions -->
+     <script>
+        const myFunc = (a,b,c) =>{
+            return a*b*c;
+        }
+        let product1 = myFunc(2,3,4);
+        document.getElementById('demo2').innerHTML = product1;
+     </script>
   </body>
 </html>
