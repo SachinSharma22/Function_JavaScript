@@ -9,9 +9,29 @@
       We first define the function and then assign it to a variable unlike in
       expressions
     </p>
+    <p id="demo"></p>
+
+    <!-- Functions as Objects -->
+     <p id="oIntro">JavaScript functions are a special type of objects, called function objects.
+        A function object includes a string which holds the actual code i.e, the function body of the function.
+     </p>
+     <p id="demo1"></p>
 
     <script>
-        
+        function product(a, b){
+            return a*b;
+        }
+        let y = product(4, 5);
+        document.getElementById('demo').innerHTML = y;
+    </script>
+
+
+    <!-- Functions as Objects -->
+    <script>
+        var body = "return Math.PI *rad *rad";
+        var circle = new Function("rad",body);
+        alert(circle(5));
+
     </script>
   </body>
 </html>
