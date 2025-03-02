@@ -30,10 +30,29 @@
         logic to test correctness of data.
       </p>
          -->
-        <form action="">
+        <form action="message.html" name="myForm" onsubmit="return(Validate());">
             <input type="email" name="Email" id="" placeholder="Email"> <br>
             <input type="text" name="Password" id="" placeholder="Password"><br>
             <button type="submit">submit</button>
         </form>
+
+        <!-- Script file -->
+         <script>
+            function Validate(){
+                if(document.myForm.Email.value == ""){
+                    alert("Please provide your email id");
+                    document.myForm.Email.focus();
+                    return false;
+                }
+                else if(document.myForm.Password.value == ""){
+                    alert("Please provide your password");
+                    document.myForm.Password.focus();
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+         </script>
     </body>
 </html>
