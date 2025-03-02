@@ -4,43 +4,44 @@
   </head>
   <body>
     <h1>Function In JavaScript</h1>
-    <p id="intro">
+    
+    <!-- <p id="intro">
       In JavaScript, a function is a value, so we can deal with it as a value/ <br>
       We first define the function and then assign it to a variable unlike in
       expressions
     </p>
-    <p id="demo"></p>
+    <p id="demo"></p> -->
 
     <!-- Functions as Objects -->
-     <p id="oIntro">JavaScript functions are a special type of objects, called function objects. <br>
+     <!-- <p id="oIntro">JavaScript functions are a special type of objects, called function objects. <br>
         A function object includes a string which holds the actual code i.e, the function body of the function.
      </p>
-     <p id="demo1"></p>
+     <p id="demo1"></p> -->
 
      <!-- Arrow Functions -->
-      <p id="afIntro">
+      <!-- <p id="afIntro">
         Functions can be written more compactly with the help of Arrow functions. <br>
         Arrow function expressions are ill suited as methods, and they cannot be used as constructors. <br>
       </p>
-      <p id="demo2"></p>
+      <p id="demo2"></p> -->
 
       <!-- Generator Function -->
-       <p id="GFIntro">Regular functions return only one, single value (or nothing).br
+       <!-- <p id="GFIntro">Regular functions return only one, single value (or nothing).br
         Generators can return ("Yield") multiple values, one after another, on-demand. <br>
         To create a Generator, we use the syntax: function*;
        </p>
-
+    
     <script>
         function product(a, b){
             return a*b;
         }
         let y = product(4, 5);
         document.getElementById('demo').innerHTML = y;
-    </script>
+    </script> -->
 
 
     <!-- Functions as Objects -->
-    <script>
+    <!-- <script>
         var body = "return Math.PI *rad *rad";
         var circle = new Function("rad",body);
         // alert(circle(5));
@@ -48,7 +49,7 @@
 
         document.getElementById('demo1').innerHTML = area;
 
-    </script>
+    </script> -->
 
     <!-- Arrow Functions -->
      <script>
@@ -60,7 +61,7 @@
      </script>
 
      <!-- Generator Functions -->
-      <script>
+       <script>
         function* generateFunc(){
             yield 1;
             yield 2;
@@ -74,6 +75,8 @@
         alert(JSON.stringify(one));
         alert(JSON.stringify(two));
         alert(JSON.stringify(three));
-      </script>
+      </script> 
+      
+
   </body>
 </html>
