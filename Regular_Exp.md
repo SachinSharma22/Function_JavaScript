@@ -15,3 +15,6 @@
    <p><strong>Patterns:></strong> Brackets are used to find the range of characters.</p>
 
    <p><strong>Quantifiers:></strong> Quantifiers define the number of occurrences of a string.</p>
+   <h1>JavaScript Promises</h1>
+   <p>JavaScript is predominantly single threaded. This makes it slow and restrictive <br>
+   With the help of promises and other Asynchronous concepts, JavaScript can perform long network requests <br> simultaneously without  blocking the main thread.</p>
